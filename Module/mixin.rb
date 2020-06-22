@@ -1,16 +1,16 @@
 module Rectangle
-  def self.areaR(length,breadth)
+  def arear(length,breadth)
     length*breadth
   end
 end
 module Square
-  def self.areaS(length)
+  def areas(length)
     length*length
   end
 end
 module Circle
   PI = 3.14159
-  def self.areaC(radius)
+  def areac(radius)
     PI*radius*radius
   end
 end
@@ -19,7 +19,8 @@ include Rectangle
 include Square
 include Circle
 end
+
 obj=Geometry.new
-obj.areaR(13,9)
-puts obj.areaS(7)
-puts obj.areaC(100)
+puts obj.arear(13,9)
+puts obj.areas(7)
+puts obj.areac(100)
